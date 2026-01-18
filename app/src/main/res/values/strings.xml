@@ -6,6 +6,8 @@
 
     <string name="ok">OK</string>
 
+    <string name="test_mail_btn">Send test mail</string>
+
     <string name="mail_host">Mail host</string>
     <string name="mail_port">Mail port</string>
     <string name="mail_user">Mail user</string>

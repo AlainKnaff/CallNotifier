@@ -14,8 +14,6 @@ import android.app.role.RoleManager
 import android.content.Intent
 import android.view.View
 
-import androidx.preference.PreferenceManager
-
 import lu.knaff.alain.call_notifier.ui.theme.CallNotifierTheme
 import lu.knaff.alain.call_notifier.R
 
@@ -34,16 +32,17 @@ class MainActivity : AppCompatActivity() {
 
     fun sendTestMail(view:View)
     {
-        val preferences = PreferenceManager
-            .getDefaultSharedPreferences(this).all
-        val host = preferences.get("mail_host")
-        Log.i(TAG, "Host="+host)
+        SendMail.send(this, "Test mail from Call Notifier",
+		      "This is a test") {
+	    e->runOnUiThread() {
+		   AlertDialog
+		       .Builder(this)
+		       .setMessage("An error occured: "+e)
+		       .setPositiveButton(R.string.ok) { d, w -> d.dismiss() }
+		       .show();
 
-        AlertDialog
-            .Builder(this)
-            .setMessage("Test")
-            .setPositiveButton(R.string.ok) { d, w -> d.dismiss() }
-            .show();
+	       }
+	}
     }
 
     private val REQUEST_ID = 1;

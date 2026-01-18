@@ -9,25 +9,25 @@
     android:fitsSystemWindows="true"
     >
 
-  <Button
-      android:layout_height="wrap_content"
-      android:layout_width="wrap_content"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-
-      android:id="@+id/send_test_mail"
-      android:text="Send test mail"
-      android:onClick="sendTestMail"
-      />
-
   <androidx.fragment.app.FragmentContainerView
       android:id="@+id/settings_container"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      app:layout_constraintTop_toBottomOf="@id/send_test_mail"
+      app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
+      />
+
+  <Button
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      app:layout_constraintTop_toBottomOf="@id/settings_container"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+
+      android:id="@+id/send_test_mail"
+      android:text="@string/test_mail_btn"
+      android:onClick="sendTestMail"
       />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
