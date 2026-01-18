@@ -1,12 +1,9 @@
 package lu.knaff.alain.call_notifier.services
 
-import android.content.Intent
 import android.util.Log
 
 import android.telecom.Call
 import android.telecom.CallScreeningService
-
-import android.os.IBinder
 
 public class CallNotificationService : CallScreeningService() {
     private final val TAG="CallScreeningService"
