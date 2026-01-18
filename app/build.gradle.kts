@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "lu.knaff.alain.call_notifier"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "lu.knaff.alain.call_notifier"
