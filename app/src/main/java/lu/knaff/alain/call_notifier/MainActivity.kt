@@ -3,7 +3,7 @@ package lu.knaff.alain.call_notifier
 import android.util.Log
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
+import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -14,19 +14,31 @@ import android.app.role.RoleManager
 import android.content.Intent
 import android.view.View
 
+import androidx.preference.PreferenceManager
+
 import lu.knaff.alain.call_notifier.ui.theme.CallNotifierTheme
 import lu.knaff.alain.call_notifier.R
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
     private final val TAG="MainActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main)
+
+        supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.settings_container, SettingsFragment())
+                .commit()
     }
 
     fun sendTestMail(view:View)
     {
+        val preferences = PreferenceManager
+            .getDefaultSharedPreferences(this).all
+        val host = preferences.get("mail_host")
+        Log.i(TAG, "Host="+host)
+
         AlertDialog
             .Builder(this)
             .setMessage("Test")

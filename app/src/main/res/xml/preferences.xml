@@ -1,0 +1,48 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <EditTextPreference
+        app:key="mail_host"
+        app:title="Mail host"
+        app:useSimpleSummaryProvider="true"
+        android:inputType="text"
+        />
+
+    <EditTextPreference
+        app:key="mail_port"
+        app:title="@string/mail_port"
+        app:useSimpleSummaryProvider="true"
+        android:inputType="number"
+        />
+
+    <EditTextPreference
+        app:key="mail_user"
+        app:title="@string/mail_user"
+        app:useSimpleSummaryProvider="true"
+        android:inputType="text"
+        />
+
+    <EditTextPreference
+        app:key="mail_password"
+        app:title="@string/mail_password"
+
+        app:useSimpleSummaryProvider="false"
+        android:inputType="textPassword"
+        />
+
+    <EditTextPreference
+        app:key="mail_sender"
+        app:title="@string/mail_sender"
+
+        app:useSimpleSummaryProvider="true"
+        />
+    <EditTextPreference
+        app:key="mail_recipient"
+        app:title="@string/mail_recipient"
+
+        app:useSimpleSummaryProvider="true"
+        />
+
+</PreferenceScreen>

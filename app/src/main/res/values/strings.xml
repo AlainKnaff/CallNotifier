@@ -5,4 +5,12 @@
     <string name="send_test_mail">Send test mail</string>
 
     <string name="ok">OK</string>
+
+    <string name="mail_host">Mail host</string>
+    <string name="mail_port">Mail port</string>
+    <string name="mail_user">Mail user</string>
+    <string name="mail_password">Mail password</string>
+    <string name="mail_sender">Mail sender</string>
+    <string name="mail_recipient">Mail recipient</string>
+
 </resources>
