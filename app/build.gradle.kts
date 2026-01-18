@@ -16,7 +16,7 @@ android {
     defaultConfig {
         applicationId = "lu.knaff.alain.call_notifier"
         minSdk = 29
-        targetSdk = 34
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 

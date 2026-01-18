@@ -3,7 +3,7 @@ package lu.knaff.alain.call_notifier
 import android.util.Log
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentActivity
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -17,7 +17,7 @@ import android.view.View
 import lu.knaff.alain.call_notifier.ui.theme.CallNotifierTheme
 import lu.knaff.alain.call_notifier.R
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : FragmentActivity() {
     private final val TAG="MainActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
