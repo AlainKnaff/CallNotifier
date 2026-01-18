@@ -5,7 +5,7 @@
 
     <EditTextPreference
         app:key="mail_host"
-        app:title="Mail host"
+        app:title="@string/mail_host"
         app:useSimpleSummaryProvider="true"
         android:inputType="text"
         />
