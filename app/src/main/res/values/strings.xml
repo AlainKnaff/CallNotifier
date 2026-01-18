@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Call Notifier</string>
+
+    <string name="call_notifier_title">Call Notifier</string>
+    <string name="send_test_mail">Send test mail</string>
+
+    <string name="ok">OK</string>
 </resources>

@@ -8,6 +8,11 @@ android {
     namespace = "lu.knaff.alain.call_notifier"
     compileSdk = 36
 
+    packaging {
+	exclude("META-INF/NOTICE.md")
+	exclude("META-INF/LICENSE.md")
+    }
+
     defaultConfig {
         applicationId = "lu.knaff.alain.call_notifier"
         minSdk = 29
@@ -49,6 +54,8 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.javamail)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
