@@ -14,6 +14,8 @@ It is useful if for some reasons you have 2 mobiles, one of which you leave most
 
 * if caller is in your contacts, no notification is sent, unless the app has "Contacts" permission
 
+* as this app uses the call screening API to be notified about calls, it is incompatible with any actual screening app that may be running on your phone. However it *is* compatible with the built-in call blocking of the dialer.
+
 ## Installation
 
 Download and install the latest app from the [release section](https://github.com/AlainKnaff/CallNotifier/releases)
@@ -28,6 +30,6 @@ However, you may also compile it yourself:
 
 * On settings screens, configure the mail account used to send, and the recipient to which you wish to sent the call notifications
 
-* Click "Send Test Mail" to make sure everything is configured correctly
+* Click `Send Test Mail` to make sure everything is configured correctly
 
 * As per Android's permission system, by default you only receive notifications for callers that are not in your address book. If you wish to get notifications for these too, you need to grant the application access to your contacts (long press on the app's icon, chose app info, then permissions, and allow Contacts)
