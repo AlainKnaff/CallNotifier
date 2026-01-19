@@ -18,7 +18,7 @@ It is useful if for some reasons you have 2 mobiles, one of which you leave most
 
 ## Installation
 
-Download and install the latest app from the [release section](releases)
+Download and install the latest app from the [release section](../../releases)
 
 However, you may also compile it yourself:
 
