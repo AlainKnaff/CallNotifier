@@ -10,7 +10,7 @@ It is useful if for some reasons you have 2 mobiles, one of which you leave most
 
 * Applications sends mail with calling number and date as soon as somebody calls the phone
 
-* mails are sent synchronously, no local buffering within the app. So, make sure your phone in on the network all the time. May change in a later version.
+* mails are sent synchronously, no local buffering within the app. So, make sure your phone is on the network all the time. May change in a later version.
 
 * if caller is in your contacts, no notification is sent, unless the app has "Contacts" permission
 
