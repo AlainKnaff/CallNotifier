@@ -35,6 +35,10 @@ jobs:
          run: |
            echo "$ENCODED_STRING" > keystore-b64.txt
            base64 -d keystore-b64.txt > app/$SIGNING_KEY_STORE_PATH
+           printenv
+           echo done printenv
+           basename ${GITHUB_REPOSITORY}
+           echo bktip `basename ${GITHUB_REPOSITORY}`
            
        #2
        - name: Build Release apk
@@ -48,6 +52,10 @@ jobs:
        #3
        - name: Rename apk
          run: |
+           printenv
+           echo done printenv
+           basename ${GITHUB_REPOSITORY}
+           echo bktip `basename ${GITHUB_REPOSITORY}`
            mv app/build/outputs/apk/release/app-release.apk app/build/outputs/apk/release/`basename ${GITHUB_REPOSITORY}`_${GITHUB_REF_NAME}.apk
        #4
        - name: Upload Release Build to Artifacts
