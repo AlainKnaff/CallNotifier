@@ -16,3 +16,4 @@
 local.properties
 .kotlin
 /README.html
+/app/keystore.jks
